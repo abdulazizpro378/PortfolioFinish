@@ -60,17 +60,22 @@
 
 // export default Experties
 
-import React from 'react';
+// import React from 'react';
 import { projectExperience, WhatDoIHelp } from '../../../../utils/data';
 import css from './Experties.module.scss';
 import { motion } from 'framer-motion';
-// import { projectExperience } from '../../../../utils/data';
+
 import './Expertes.scss'
 
+// declare module '*.module.scss' {
+//     const classes: { [key: string]: string };
+//     export default classes;
+//   }
+
 declare module '*.module.scss' {
-    const classes: { [key: string]: string };
-    export default classes;
-  }
+  const classes: { [key: string]: string };
+  export default classes;
+}
 
 interface Experience {
   bg: string;

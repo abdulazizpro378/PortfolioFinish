@@ -3,7 +3,7 @@ import { workExp } from "../../../../utils/data";
 import css from "./Work.module.scss";
 import {motion} from 'framer-motion'
 // import { staggerChildren } from "../../../../utils/motion";
-import { draw, fadeIn, slideIn, staggerChildren, textVariant2, zoomIn } from "../../../../utils/motion";
+import {  fadeIn,  staggerChildren, textVariant2, zoomIn } from "../../../../utils/motion";
 import './Workport.scss'
 const Work = () => {
   return (

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import './Portfolyu.scss'
 import css from "./Portfolio.module.scss";
 // import { staggerChildren } from "../../../../utils/motion";
-import { fadeIn, staggerChildren, textVariant, textVariant2 } from "../../../../utils/motion";
+import { fadeIn, staggerChildren, textVariant,  } from "../../../../utils/motion";
 const Portfolio = () => {
   return (
     <motion.section

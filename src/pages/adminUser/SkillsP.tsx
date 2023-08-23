@@ -272,7 +272,7 @@ const SkillsP = () => {
 
   const getSkills = useCallback(async () => {
     try {
-      if (true) {
+      if ('salom') {
         // Shartni qo'shing
         // const { data } = await request.get(`skills?user=${albumId}`);
         const { data } = await request.get(

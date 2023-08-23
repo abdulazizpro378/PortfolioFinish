@@ -4,7 +4,7 @@ import { useState } from "react";
 import {SiSkillshare} from "react-icons/si"
 import {MdOutlineCastForEducation, MdOutlineDashboardCustomize} from "react-icons/md"
 import Cookies from "js-cookie";
-import {AiOutlineMessage, AiFillHome} from "react-icons/ai"
+// import {AiOutlineMessage, AiFillHome} from "react-icons/ai"
 import { Layout, Menu, Button, theme, Avatar } from "antd";
 import {
   MenuFoldOutlined,
