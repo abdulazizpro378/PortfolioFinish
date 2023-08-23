@@ -1,0 +1,66 @@
+// @import '../../styles/contants.scss';
+
+
+$sm :640px;
+$md : 768px;
+$lg : 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+$primary: #0D2F3F;
+$secondary: #286F6C;
+$secondary-white: #E7E7E7;
+
+
+.wrapper{
+    background: white;
+    .container{
+        gap: 2rem;
+        @media (max-width: $sm) {
+            flex-direction: column;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+        .left{
+            flex: 3;
+            >*{
+                display: block;
+            }
+            >:nth-child(2)
+            {
+                margin-top: 3rem;
+
+                a{
+                    text-decoration: underline;
+                    color: orange;
+                }
+            }
+        }
+
+
+        .right{
+            flex: 1;
+            .info{
+                margin-bottom: 1rem;
+                >*{
+                    display: block;
+                }
+            }
+            .menu{
+                @media (max-width: $sm) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                list-style: none;
+                li{
+                    cursor: pointer;
+                    &:hover{
+                        color: $secondary
+                    }
+                }
+            }
+        }
+    }
+}
