@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 // import { footerVariants, staggerChildren } from "../../utils/motion";
 import css from "./Footer.module.scss";
 import {motion} from 'framer-motion'

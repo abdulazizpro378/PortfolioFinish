@@ -72,10 +72,10 @@ import './Expertes.scss'
 //     export default classes;
 //   }
 
-declare module '*.module.scss' {
-  const classes: { [key: string]: string };
-  export default classes;
-}
+// declare module '*.module.scss' {
+//   const classes: { [key: string]: string };
+//   export default classes;
+// }
 
 interface Experience {
   bg: string;

@@ -264,7 +264,7 @@ const SkillsP = () => {
   const [form] = Form.useForm();
   const [myskills, setMyskills] = useState<SkillsType[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(4);
+  // const [pageSize, setPageSize] = useState(4);
   const [isLoading, setIsLoading] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
@@ -272,7 +272,7 @@ const SkillsP = () => {
 
   const getSkills = useCallback(async () => {
     try {
-      if ('salom') {
+      // if ('') {
         // Shartni qo'shing
         // const { data } = await request.get(`skills?user=${albumId}`);
         const { data } = await request.get(
@@ -283,7 +283,7 @@ const SkillsP = () => {
 
         setMyskills(data.data);
         setIsLoading(false);
-      }
+      // }
     } catch (err) {
       console.log(err);
       setIsLoading(true);
@@ -350,10 +350,10 @@ const SkillsP = () => {
 
   console.log(myskills);
   
-  const paginatedTeachers = filteredProduct.slice(
-    (currentPage - 1) * pageSize,
-    currentPage * pageSize
-  );
+  // const paginatedTeachers = filteredProduct.slice(
+  //   (currentPage - 1) * pageSize,
+  //   currentPage * pageSize
+  // );
 
 
 function deleteTeacher(id: string) {
@@ -432,7 +432,7 @@ function deleteTeacher(id: string) {
             </div>
           ) : (
             <div className="skills__container grid">
-              {paginatedTeachers?.map((pr) => (
+              {myskills?.map((pr) => (
                 <div key={pr._id} className="card">
                   <div className="card-header"> {pr.name}</div>
                   <div className="card-main">
@@ -480,7 +480,7 @@ function deleteTeacher(id: string) {
           <div className="paganation">
             <Pagination
               current={currentPage}
-              pageSize={pageSize}
+              // pageSize={pageSize}
               total={filteredProduct.length} // Ma'lumotlar to'plami uzunligi
               showSizeChanger={false} // Elementlar sonini o'zgartirish imkoniyatini o'chirish
               onChange={handlePageChange}
