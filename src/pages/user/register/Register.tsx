@@ -94,7 +94,7 @@ const Register = () => {
               Register
             </button>
             <div className="advice-box">
-            <h1 className="advice"> Login o'tish uchun bosing  <Link to="/login">Login</Link></h1>
+            <h1 className="advice">   <Link to="/login">Login</Link></h1>
             </div>
           </div>
         </form>
