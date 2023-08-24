@@ -1,7 +1,7 @@
 // import React from "react";
 import css from "./Hero.module.scss";
 import { motion } from "framer-motion";
-import { staggerContainer, fadeIn, slideIn } from "../../../utils/motion";
+import {  fadeIn, slideIn } from "../../../utils/motion";
 import { Variants } from "framer-motion";
 import './heroOdiy.scss'
 
@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className={`paddings ${css.wrapper}`}>
       <motion.div
-        variants={staggerContainer}
+        // variants={staggerContainer}
         initial="hidden"
         animate="show"
         viewport={{ once: false, amount: 0.25 }}
