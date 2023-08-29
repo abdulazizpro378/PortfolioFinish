@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import "./Login-register.scss";
@@ -94,7 +94,7 @@ const Register = () => {
               Register
             </button>
             <div className="advice-box">
-            <h1 className="advice">   <Link to="/login">Login</Link></h1>
+
             </div>
           </div>
         </form>
